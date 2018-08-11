@@ -22,7 +22,7 @@ bin/setup
 
 Write a program to evaluate poker hands and determine a winner.
 
-This guide to poker hand strengths maybe useful.
+This [guide to poker hand strengths](https://github.com/moneypool/ranking-poker-hands) may be useful.
 
 Your program should accept hands in the following representation:
 
@@ -50,7 +50,7 @@ hand_1 = %w(2S 2D AH 3S 5S)
 hand_2 = %w(2H 2C KH 5H 9C)
 
 HandEvaluator.new.return_stronger_hand(hand1, hand2)
-  # => ["2S", "2D", "AH", "3S", "5S"]hand_1 = %w(2S
+  # => ["2S", "2D", "AH", "3S", "5S"]
 ```
 
 Note that you must handle ties. In the example above, both hands have a pair, but hand_1 has a higher "kicker" (the Ace).
